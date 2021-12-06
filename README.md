@@ -1,14 +1,22 @@
 # Azure-FACE-API
 
-<h2> Face Detection API V1.0 </h2>
+<h2> What is Face Detection API V1.0 ? </h2>
 
 Face API can detect faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
 
-<h2> Face Detection API V1.0 build information </h2>
+<h5> Face ID </h5> - It is unique identifier string for each detected face in an image. 
+
+<h5> face rectangles </h5> - 
+
+<h5> Face Landmarks </h5> 
+![](https://miro.medium.com/max/1080/1*Nl-H3eRueex7dyWR0IBlpw.png)
+<h5> Face attributes </h5> 
+
+<h2> How is Face Detection API V1.0 built ?</h2>
  
- Programming Language: Javascript - Node JS, Express JS 
+ Programming Language: Node JS, Express JS 
  Protocol : HTTP 
- API Playground : Swagger
- Image Storage : [Multer](https://www.npmjs.com/package/multer)
+ API Playground : [Swagger](https://swagger.io/)
+ Image Storage : [Multer](https://www.npmjs.com/package/multer) 
  
  
