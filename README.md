@@ -1,3 +1,9 @@
 # Azure-FACE-API
 
-<h3> Face API - v1.0 </h3>
+<h2> Face Detection API V1.0 </h2>
+
+Face API can detect faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
+
+<h2> Face Detection API V1.0 build information <h2>
+ 
+  
