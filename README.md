@@ -9,7 +9,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 <h5> face rectangles </h5> - 
 <img src="https://images.readwrite.com/wp-content/uploads/2020/01/History-of-Facial-Recognition-Technology-825x500.jpg.webp" alt = "face rectangle img" width="500" height = "300">
 <h5> Face Landmarks </h5> 
-<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceLandmarks.png" alt="face attribute img" width="500" height="400">
+<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceLandmarks.png" alt="face attribute img" width="600" height="400">
 
 <h5> Face attributes </h5> 
 
