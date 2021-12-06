@@ -14,9 +14,9 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 
 <h2> How is Face Detection API V1.0 built ?</h2>
  
- Programming Language: Node JS, Express JS 
- Protocol : HTTP 
- API Playground : [Swagger](https://swagger.io/)
- Image Storage : [Multer](https://www.npmjs.com/package/multer) 
+ - Programming Language: Node JS, Express JS 
+ - Protocol : HTTP 
+ - API Playground : [Swagger](https://swagger.io/)
+ - Image Storage : [Multer](https://www.npmjs.com/package/multer) 
  
  
