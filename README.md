@@ -14,13 +14,19 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 <h5> Face attributes </h5>  - Extracts face related attributes, such as age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition.
 
 <h2> How is Face Detection API V1.0 built ?</h2>
- 
+
+ - Consumed API : Azure Face API V1.0 - Detect, recognitionModel - "recognition_03", detectionModel - "detection_01".
  - Programming Language: Node JS, Express JS 
  - Protocol : HTTP 
- - API Playground : [Swagger](https://swagger.io/)
  - Image Storage : [Multer](https://www.npmjs.com/package/multer) 
- - API used : Azure Face API V1.0 - Detect, recognitionModel - "recognition_03".
+ - API Playground : [Swagger](https://swagger.io/)
  
  <h2> How Face Detection API V1.0 works ? </h2>
   
-  When the user uploads the image either URL or image file for the face detection, The Face Detection API V1.0 hits the Azure Face API V1.0 - Detect. The Azure Face   API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON      response. 
+  - When the user uploads the image either URL or image file for the face detection, The Face Detection API V1.0 hits the Azure Face API V1.0 - Detect. The Azure  Face API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON      response. 
+  - The Allowed image file formats are JPEG, PNG, GIF (the first frame), and BMP format are supported.
+  - The Image file Size is from 1KB to 6MB.
+  - The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels. Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.
+  - It can detect upto 100 images for an image and Faces are ranked by face rectangle size from large to small.
+  
+  
