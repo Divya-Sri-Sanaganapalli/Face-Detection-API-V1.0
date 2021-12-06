@@ -1,3 +1,3 @@
 # Azure-FACE-API
 
-<h1> Face API - v1.0 </h1>
+<h3> Face API - v1.0 </h3>
