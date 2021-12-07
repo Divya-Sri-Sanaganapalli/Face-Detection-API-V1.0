@@ -313,7 +313,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 
  ```
   
-  - If API is requested without specifying any uploading url or image url the following JSON error response will be displayed
+  - If API is requested without specifying any uploading image file or image url the following JSON error response will be displayed
   
   ```
            {
@@ -371,6 +371,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   
   <h3> Response Status : 500 - Internal Server Error </h3> 
   
+  If there is problem from Azure API service, then the following JSON error response will be displayed
   ```
         {
            "error": {
