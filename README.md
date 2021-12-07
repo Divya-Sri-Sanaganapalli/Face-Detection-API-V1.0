@@ -79,7 +79,10 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   
   
   
-  <h3> Responses and its meaning: </h3> 
+  <h3> Responses </h3> 
+  
+  <h3> Response Status : 200 - Successfully Response Recieved </h3> 
+  JSON fields in response body and its description 
   
   | Fields | Type | Description |
   | --- | --- | --- |  
@@ -90,8 +93,8 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 
   
   
-  
-  <h5> Sample Success Response </h5>
+
+  <h4> Sample Success Response </h4>
   
   ```
   [
@@ -296,5 +299,16 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 
 ```
 
+<h3> Response Status : 400 - Bad Request </h3> 
+  
+  - if API is requested without specifying any uploading url or image url the following JSON error response will be displayed
+  
+  ```
+  error : {
+                code:"MissingInput",
+                message:"You should either input image url or upload image file"
+            }
+  
+  ```
 
   
