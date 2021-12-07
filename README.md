@@ -7,7 +7,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 <h5> Face ID </h5> - Unique identifier string for each detected face in an image. 
 
 <h5> Face rectangles </h5> - Top, left, width, height of the face 
-<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceRectangle.png" alt = "face rectangle img" width="500" height = "300">
+<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceRectangle.png" alt = "face rectangle img" width="700" height = "300">
 <h5> Face Landmarks </h5> - Set of easy-to-find points on a face, such as the pupils or the tip of the nose. By default, there are 27 predefined landmark points. The following figure shows all 27 points:
 <img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceLandmarks.png" alt="face attribute img" width="600" height="400">
 
