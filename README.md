@@ -79,7 +79,12 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   
   
   
-  <h5> Sample Response </h5>
+  <h3> Responses and its meaning: </h3> 
+  
+  
+  
+  
+  <h5> Sample Success Response </h5>
   
   ```
   [
@@ -283,5 +288,6 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 ]
 
 ```
-  
+
+
   
