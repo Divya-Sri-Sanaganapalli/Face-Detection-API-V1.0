@@ -369,3 +369,13 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
        
    ```
   
+  <h3> Response Status : 500 - Internal Server Error </h3> 
+  
+  ```
+        {
+           "error": {
+               "message": "Internal Server Error"
+             }
+         }
+  ```
+ 
