@@ -300,36 +300,50 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 ```
 
 <h3> Response Status : 400 - Bad Request </h3> 
+
+  - If API is requested with invalid or broken image URL then the following JSON error response will be displayed 
+  
+  ```
+      {
+        "error": {
+           "code": "InvalidURL",
+           "message": "Invalid image URL or error downloading from target server. Remote server error returned: \"The SSL connection could not be established, see              inner exception.\""
+       }
+     }
+
+ ```
   
   - If API is requested without specifying any uploading url or image url the following JSON error response will be displayed
   
   ```
            {
-            error : {
-                code: "MissingInput",
-                message: "You should either input image url or upload image file"
+            "error" : {
+                "code": "MissingInput",
+                "message": "You should either input image url or upload image file"
             }
-  
+          }
   ```
   
   - If the input images doesn't have any human faces then the following JSON error response will be displayed
   
   ```
            {
-            error : {
-                code: "NoFaceDetected",
-                message: "No face detected in the given input"
-            }
+            "error" : {
+                "code": "NoFaceDetected",
+                "message": "No face detected in the given input"
+                 }
+           }
   ```
   
   - If API is requested with image URL and file upload at same time, then following JSON error response will be displayed
 
   ```
           {
-            error : {
-                code:"InvalidInputs",
-                message:"You are allowed to input either URL or file. Requesting both at the same time is not allowed"
+            "error" : {
+                "code": "InvalidInputs",
+                "message": "You are allowed to input either URL or file. Requesting both at the same time is not allowed"
             }
+         }
   ```
   
   
