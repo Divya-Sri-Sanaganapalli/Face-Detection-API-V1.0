@@ -36,9 +36,15 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  
  <h3> Try out this API with Postman! </h3>
  
- - Set request method to 'POST' and set the Request URL as
+ - Input Image URL : Set request method to 'POST' and set the Request URL as
  ```
- ["https://67.205.172.73:3000/api/v1/detectFace?imageURL=<paste image url here>"]
+ "https://67.205.172.73:3000/api/v1/detectFace?imageURL=<paste image url here>"
+ 
+ ```
+ - Image Image File : Set request method to 'POST', set the Request URL as below, Set 'body', form-data and give KEY as imageURL, upload file in VALUE.
+ 
+ ```
+ https://67.205.172.73:3000/api/v1/detectFace
  
  ```
  
