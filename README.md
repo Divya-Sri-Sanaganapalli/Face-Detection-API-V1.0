@@ -1,4 +1,4 @@
-# Azure-FACE-API
+
 
 <h2> What is Face Detection API V1.0 ? </h2>
 
