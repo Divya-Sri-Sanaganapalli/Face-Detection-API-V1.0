@@ -86,7 +86,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   | faceId | String | Unique faceId of the detected face, created by detection API and it will expire 24 hours after the detection call.|
   | faceRectangle | Object | A rectangle area for the face location on image. It returns top, left, width, height. |
   | faceLandmarks | Object | An array of 27-point face landmarks pointing to the important positions of face components with X and Y coordinates. |
-  | faceAttributes | Object | Attributes include age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition. - age: An Estimated visual age i.e how old a person looks rather than actual biological age. - gender: male or female |
+  | faceAttributes | Object | * Attributes include age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition. * age: An Estimated visual age i.e how old a person looks rather than actual biological age. * gender: male or female |
 
   
   
