@@ -346,4 +346,26 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
          }
   ```
   
+  - If API is requested with unsupported image file formats, then the following JSON error response will be displayed
+
+  ```
+          {
+            "error": {
+                "code": "Allowed file formats PNG, JPG/JPEG, GIF, BMP!!",
+                "message": "Bad Request"
+          }
+        }
+  ```
+  
+  - If API is requested with the file size larger than 6 MB, then the following JSON error response will be displayed
+
+  ```
+         {
+           "error": {
+               "code": "LIMIT_FILE_SIZE",
+               "message": "Bad Request"
+           }
+       }
+       
+   ```
   
