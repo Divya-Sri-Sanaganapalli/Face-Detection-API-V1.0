@@ -41,11 +41,12 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  "https://67.205.172.73:3000/api/v1/detectFace?imageURL=<paste image url here>"
  
  ```
- - Image Image File : Set request method to 'POST', set the Request URL as below, Set 'body', form-data and give KEY as imageURL, upload file in VALUE.
+ - Input Image File : Set request method to 'POST', set the Request URL as below, Set 'body', form-data and give KEY as imageURL, upload file in VALUE.
  
  ```
  https://67.205.172.73:3000/api/v1/detectFace
  
  ```
  
+ <h3>Video Demonstration - Postman </h3>
   
