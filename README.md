@@ -78,13 +78,13 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   <h3>Video Demonstration for using this API using Swagger! </h3>
   
   
-  #
+  
   <h3> Responses and its meaning: </h3> 
-  | Fields | Type | Description
-  | --- | --- | --- |
-  | Face ID | String | Unique faceId of the detected face, created by detection API and it will expire 24 hours after the detection call. |
+  | Fields | Type | Description |
+  | --- | --- | --- |  
+  | Face ID | String | Unique faceId of the detected face, created by detection API and it will expire 24 hours after the detection call.|
+  
 
-  #
   
   
   
