@@ -99,192 +99,197 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   ```
   [
     {
-        "faceId": "c0d65972-1815-4156-8dcc-0b4b391e3b7a",
+        "faceId": "fcebf0bb-285c-4614-acce-6285ca909ff6",
         "faceRectangle": {
-            "top": 204,
-            "left": 427,
-            "width": 271,
-            "height": 271
+            "top": 282,
+            "left": 213,
+            "width": 311,
+            "height": 311
         },
         "faceLandmarks": {
             "pupilLeft": {
-                "x": 493.7,
-                "y": 282.6
+                "x": 293.2,
+                "y": 377.1
             },
             "pupilRight": {
-                "x": 620.3,
-                "y": 275.5
+                "x": 435.3,
+                "y": 359.7
             },
             "noseTip": {
-                "x": 571.1,
-                "y": 350.8
+                "x": 372.1,
+                "y": 450.8
             },
             "mouthLeft": {
-                "x": 510.7,
-                "y": 402.3
+                "x": 306.5,
+                "y": 513.7
             },
             "mouthRight": {
-                "x": 620.6,
-                "y": 400.9
+                "x": 438.9,
+                "y": 500.5
             },
             "eyebrowLeftOuter": {
-                "x": 433.5,
-                "y": 272.1
+                "x": 229.8,
+                "y": 354.1
             },
             "eyebrowLeftInner": {
-                "x": 520.8,
-                "y": 254.8
+                "x": 316.1,
+                "y": 344.1
             },
             "eyeLeftOuter": {
-                "x": 473.6,
-                "y": 289.2
+                "x": 270.8,
+                "y": 382.7
             },
             "eyeLeftTop": {
-                "x": 491,
-                "y": 276.3
+                "x": 289.2,
+                "y": 370.9
             },
             "eyeLeftBottom": {
-                "x": 495.5,
-                "y": 294
+                "x": 293.4,
+                "y": 384.3
             },
             "eyeLeftInner": {
-                "x": 515.4,
-                "y": 286
+                "x": 311.1,
+                "y": 376.2
             },
             "eyebrowRightInner": {
-                "x": 591,
-                "y": 252.5
+                "x": 386,
+                "y": 340.2
             },
             "eyebrowRightOuter": {
-                "x": 661.9,
-                "y": 249
+                "x": 485.2,
+                "y": 325.1
             },
             "eyeRightInner": {
-                "x": 600.2,
-                "y": 282.4
+                "x": 413.8,
+                "y": 364.2
             },
             "eyeRightTop": {
-                "x": 619.6,
-                "y": 267.4
+                "x": 431.6,
+                "y": 352.2
             },
             "eyeRightBottom": {
-                "x": 622.4,
-                "y": 287.2
+                "x": 433.6,
+                "y": 366.5
             },
             "eyeRightOuter": {
-                "x": 643,
-                "y": 277.1
+                "x": 454.2,
+                "y": 360.3
             },
             "noseRootLeft": {
-                "x": 544,
-                "y": 290.2
+                "x": 340.1,
+                "y": 377.5
             },
             "noseRootRight": {
-                "x": 577.2,
-                "y": 289.9
+                "x": 378.5,
+                "y": 373.5
             },
             "noseLeftAlarTop": {
-                "x": 542.8,
-                "y": 330.4
+                "x": 332.8,
+                "y": 427.1
             },
             "noseRightAlarTop": {
-                "x": 589.4,
-                "y": 327.2
+                "x": 395.6,
+                "y": 417.6
             },
             "noseLeftAlarOutTip": {
-                "x": 527.3,
-                "y": 354.9
+                "x": 328.3,
+                "y": 454.5
             },
             "noseRightAlarOutTip": {
-                "x": 608,
-                "y": 351.9
+                "x": 412.9,
+                "y": 442.8
             },
             "upperLipTop": {
-                "x": 571.7,
-                "y": 392.9
+                "x": 375,
+                "y": 498.6
             },
             "upperLipBottom": {
-                "x": 572.4,
-                "y": 398.4
+                "x": 377.6,
+                "y": 512.4
             },
             "underLipTop": {
-                "x": 574.3,
-                "y": 418.3
+                "x": 379.3,
+                "y": 517.8
             },
             "underLipBottom": {
-                "x": 574.6,
-                "y": 430.8
+                "x": 381.9,
+                "y": 535.9
             }
         },
         "faceAttributes": {
-            "smile": 0.98,
+            "smile": 1,
             "gender": "female",
-            "age": 28,
+            "age": 30,
             "facialHair": {
                 "moustache": 0,
                 "beard": 0,
                 "sideburns": 0
             },
-            "glasses": "NoGlasses",
+            "glasses": "ReadingGlasses",
             "emotion": {
                 "anger": 0,
-                "contempt": 0.02,
+                "contempt": 0,
                 "disgust": 0,
                 "fear": 0,
-                "happiness": 0.98,
+                "happiness": 1,
                 "neutral": 0,
                 "sadness": 0,
                 "surprise": 0
             },
             "blur": {
-                "blurLevel": "medium",
-                "value": 0.55
+                "blurLevel": "low",
+                "value": 0.04
             },
             "exposure": {
                 "exposureLevel": "goodExposure",
-                "value": 0.57
+                "value": 0.53
             },
             "noise": {
-                "noiseLevel": "medium",
-                "value": 0.37
+                "noiseLevel": "low",
+                "value": 0
             },
             "makeup": {
                 "eyeMakeup": true,
                 "lipMakeup": true
             },
-            "accessories": [],
+            "accessories": [
+                {
+                    "type": "glasses",
+                    "confidence": 0.98
+                }
+            ],
             "occlusion": {
                 "foreheadOccluded": false,
                 "eyeOccluded": false,
                 "mouthOccluded": false
             },
             "hair": {
-                "bald": 0.03,
+                "bald": 0.11,
                 "invisible": false,
                 "hairColor": [
                     {
-                        "color": "black",
-                        "confidence": 1
+                        "color": "blond",
+                        "confidence": 0.97
                     },
                     {
                         "color": "brown",
-                        "confidence": 0.67
-                    },
-                    {
-                        "color": "gray",
-                        "confidence": 0.59
-                    },
-                    {
-                        "color": "other",
-                        "confidence": 0.51
-                    },
-                    {
-                        "color": "blond",
-                        "confidence": 0.05
+                        "confidence": 0.89
                     },
                     {
                         "color": "red",
-                        "confidence": 0.02
+                        "confidence": 0.52
+                    },
+                    {
+                        "color": "other",
+                        "confidence": 0.19
+                    },
+                    {
+                        "color": "gray",
+                        "confidence": 0.17
+                    },
+                    {
+                        "color": "black",
+                        "confidence": 0.06
                     },
                     {
                         "color": "white",
@@ -296,8 +301,11 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
         }
     }
 ]
+           
+           
+            
 
-```
+  ```
 
 <h3> Response Status : 400 - Bad Request </h3> 
 
