@@ -66,6 +66,10 @@ const upload = multer({
  * /api/v1/detectFace:
  *    post:
  *      description: Detects the faces in image and returns faceid, faceRectangle, faceLandmarks and faceAttributes
+ *      consumes:
+ *          - multipart/form-data
+ *      produces:
+ *          - application/json
  *      parameters:
  *          - in: formData
  *            name: imageURL
