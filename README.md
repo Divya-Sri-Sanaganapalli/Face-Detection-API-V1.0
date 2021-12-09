@@ -29,7 +29,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   
  <h2> How to consume Face Detection API V1.0 API ? </h2>
  
- <h4> Input requirements: </h4>
+ <h4> Input constraints: </h4>
  
   - The Allowed image file formats are JPEG, PNG, GIF (the first frame), and BMP format are supported.
   - The Image file Size is from 1KB to 6MB.
@@ -81,7 +81,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
   
   <h3> Responses </h3> 
   
-  <h3> Response Status : 200 - Successfully Response Recieved </h3> 
+  <h3> Response Status : 200 - Successfull Response Recieved </h3> 
   JSON fields in response body and its description 
   
   | Fields | Type | Description |
