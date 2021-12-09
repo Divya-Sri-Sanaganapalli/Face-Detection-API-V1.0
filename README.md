@@ -16,7 +16,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
 
 <h2> How is Face Detection API V1.0 built ?</h2>
 
- - Consumed API : Azure Face API V1.0 - Detect, recognitionModel - "recognition_03", detectionModel - "detection_01".
+ - Consumed API : Azure Face API V1.0 - Detect, recognitionModel - "recognition_03"
  - Programming Language: Node JS, Express JS 
  - Protocol : HTTP 
  - File upload : [Multer](https://www.npmjs.com/package/multer), Function - diskStorage 
@@ -24,9 +24,12 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  
  <h2> How Face Detection API V1.0 works ? </h2>
   
-  - When the user uploads the image either URL or image file for the face detection, The Face Detection API V1.0 hits the Azure Face API V1.0 - Detect. The Azure  Face API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON      response. It can detect upto 100 faces for an image and Faces are ranked by face rectangle size from large to small.
+When the user uploads the image either URL or image file, The Face Detection API V1.0 hits the Azure Face API V1.0 - Detect. The Azure  Face API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON response. 
 
-  
+**If the image URL is given as input in request body to this API, then URL is directed to Azure Face API and In case of image file upload, the file is upload and saved in server and URL of the saved file is then directed to Azure Face API**
+
+It can detect upto 100 faces for an image and Faces are ranked by face rectangle size from large to small.
+
  <h2> How to consume Face Detection API V1.0 API ? </h2>
  
  <h4> Input constraints: </h4>
@@ -39,17 +42,22 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  
  - Input Image URL : Set request method to 'POST' and set the Request URL as
  ```
- https://67.205.172.73:3000/api/v1/detectFace?imageURL=<paste image url here>
+ https://67.205.172.73:3000/api/v1/detectFace
  
  ```
+ In Request Body > form-data, Set Key as 'imageURL' and value as '<input image url>' 
+ 
  - Input Image File upload: Set request method to 'POST', set the Request URL as below, Set 'body', form-data and give KEY as imageURL, upload file in VALUE.
  
  ```
  https://67.205.172.73:3000/api/v1/detectFace
  
  ```
+ In Request Body > form-data, Set Key as 'imageFile' and upload an image file in value 
+ 
  
  <h3>Video Demonstration for using this API using Postman! </h3>
+  
   
   
  <h3> Try out with Swagger Playground! </h3>
@@ -58,22 +66,6 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  http://67.205.172.73:3000/docs
 
  ```
- 
-  <h5> Request Headers </h5>
-  
-  For Input Image URL then Set Header as 
-  
-  ```
-  'Content-Type': 'application/json'
- 
-  ```
-  
-  For Input Image File upload then Set Header as  
-  
-  ```
-  'Content-Type': 'multipart/form-data'
-   
-  ```
   
   <h3>Video Demonstration for using this API using Swagger! </h3>
   
@@ -328,8 +320,8 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
             "error" : {
                 "code": "MissingInput",
                 "message": "You should either input image url or upload image file"
-            }
-          }
+         }
+       }
   ```
   
   - If the input images doesn't have any human faces then the following JSON error response will be displayed
@@ -339,8 +331,8 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
             "error" : {
                 "code": "NoFaceDetected",
                 "message": "No face detected in the given input"
-                 }
-           }
+          }
+        }
   ```
   
   - If API is requested with image URL and file upload at same time, then following JSON error response will be displayed
@@ -373,7 +365,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
                "code": "LIMIT_FILE_SIZE",
                "message": "Bad Request"
            }
-       }
+         }
        
    ```
   
@@ -385,6 +377,6 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
            "error": {
                "message": "Internal Server Error"
              }
-         }
+        }
   ```
  
