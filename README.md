@@ -64,7 +64,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   
   <h3>Video Demonstration for using this API using Swagger! </h3>
   
-  
+  https://github.com/Divya-Sri-Sanaganapalli/project_videos/blob/main/SwaggerDemo.mp4
   
   <h3> Responses </h3> 
   
