@@ -39,21 +39,14 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   - The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels. Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.
  
  <h3> Try out this API with Postman! </h3>
- 
- - Input Image URL : Set request method to 'POST' and set the Request URL as
+ Set request method to 'POST' and set the Request URL as
  ```
  https://67.205.172.73:3000/api/v1/detectFace
  
  ```
- In Request Body > form-data, Set Key as 'imageURL' and value as '<input image url>' 
+ - Input Image URL :  In Request Body > form-data, Set Key as 'imageURL' and value as '<input image url>' 
  
- - Input Image File upload: Set request method to 'POST', set the Request URL as below, Set 'body', form-data and give KEY as imageURL, upload file in VALUE.
- 
- ```
- https://67.205.172.73:3000/api/v1/detectFace
- 
- ```
- In Request Body > form-data, Set Key as 'imageFile' and upload an image file in value 
+ - Input Image File upload: In Request Body > form-data, Set Key as 'imageFile' and upload an image file in value 
  
  
  <h3>Video Demonstration for using this API using Postman! </h3>
