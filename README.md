@@ -2,7 +2,7 @@
 
 <h2> What is Face Detection API V1.0 ? </h2>
 
-Face API can detect faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
+Face API can detects human faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
 
 **Face ID** -  Unique identifier string for each detected face in an image. 
 
@@ -38,6 +38,23 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   - The Image file Size is from 1KB to 6MB.
   - The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels. Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.
  
+ <h3> Request Headers <h3>
+  
+   ```
+   'Content-Type' : 'multipart/form-data'
+ 
+   ```
+ <h3> Request Body <h3>
+  
+  Input is sent in POST body. Input method supported image URL or image file. 
+  
+  Fields in request body:
+  
+  | Fields | Type | Description |
+  | --- | --- | --- |  
+  | imageURL | String | input image url to detect faces.|
+  | imageFile | File | upload the file to detect faces.|
+  
  <h3> Try out this API with Postman! </h3>
  
  Set request method to 'POST' and set the Request URL as
