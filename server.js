@@ -149,8 +149,8 @@ app.post('/api/v1/detectFace', upload.single('imageFile'), (req, res) => {
     )})
 });
 
-// Handling multer errors 
-function multerErrorHandler(error, req, res, next) {
+// Error Handler 
+function errorHandler(error, req, res, next) {
     if (error instanceof multer.MulterError) {
         return res.status(400).json({
             error: {
@@ -162,14 +162,14 @@ function multerErrorHandler(error, req, res, next) {
     else {
         return res.status(500).json({
             error: {
-                code: error.code,
+                code: "serverError",
                 message: error.message
             }
         })
     }
 }
 
-app.use(multerErrorHandler);
+app.use(errorHandler);
 
 app.get('/', (req, res) => {
     res.send('Welcome');
