@@ -26,7 +26,7 @@ const options = {
             version: '1.0.0',
             description: 'The Azure Face API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON response.'
         },
-        host: '67.205.172.73:3000', // replace this after deploying in server
+        host: '67.205.172.73:3000', 
         basePath: '/',
     },
     apis: ['server.js'],
@@ -40,6 +40,7 @@ let subscriptionKey = process.env.API_KEY;
 let face_api_uri = process.env.API_URL;
 
 
+// Multer Configuration
 var image_storage = multer.diskStorage({     
     destination: './html/uploaded/files', //  destination folder where the uploaded files are stored.
     filename: (req, file, cb) =>{
@@ -60,6 +61,7 @@ const upload = multer({
       cb(null, true)
   },
 });
+
 // Swagger Playground!
 
 /**
@@ -136,7 +138,7 @@ app.post('/api/v1/detectFace', upload.single('imageFile'), (req, res) => {
     axios.post(face_api_uri, data, options)
     .then(resp => { // response from FACE API
         if(resp.data.length!= 0){
-            res.send(resp.data); // forwarding current request with FACE API's response data
+            res.send(resp.data); 
         }else{
         return res.status(400).json( {
             error : {
