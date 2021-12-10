@@ -1,12 +1,12 @@
 const { default: axios } = require('axios');
 var express = require('express'); 
 const app = express(); // express server
-const port = 3000; // setting the port to localhost:3000
+const port = 3000;
 var multer = require('multer'); // multer is middleware for handling the uploading files. Multer adds a body object and a file or files object to the request object.
-//var upload = multer({dest:'upload/img'}); // dest is path where the uploaded files are stored. When using dest the upload image has no extension so switched to the multer storage.
-//var upload = multer({ storage: storage }) // creates multer storage
+//var upload = multer({dest:'upload/img'}); 
+//var upload = multer({ storage: storage }) 
 const path = require('path'); //requiring path to work with file and directory paths
-require('dotenv').config();
+require('dotenv').config(); 
 //console.log(process.env);
 
 //swagger
@@ -22,9 +22,9 @@ app.use(cors());
 const options = {
     swaggerDefinition: {
         info: {
-            title: 'REST API to detect faces in an image',
+            title: 'Swagger for Face Detection API',
             version: '1.0.0',
-            description: 'System Integration - Project'
+            description: 'The Azure Face API V1.0 - Detect, performs the face detection, returns the face ID, face rectangles, face landmarks and face attributes of that image in the form of JSON response.'
         },
         host: '67.205.172.73:3000', // replace this after deploying in server
         basePath: '/',
@@ -35,15 +35,15 @@ const options = {
 const specs = swaggerJsdoc(options);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(specs));
 
-//face api 
+//Azure Face API key and URI 
 let subscriptionKey = process.env.API_KEY;
 let face_api_uri = process.env.API_URL;
 
 
-var image_storage = multer.diskStorage({     // multer has two storage options diskStorage and memoryStorage but I have used diskStorage because it has full control of storing files to disk.
+var image_storage = multer.diskStorage({     
     destination: './html/uploaded/files', //  destination folder where the uploaded files are stored.
     filename: (req, file, cb) =>{
-        return cb(null, `${file.fieldname}_${Date.now()}_${(file.originalname)}`) //specifying the fieldname_date_originalfilename.extension (to make sure the file name is unique) of the file to the uploaded file or else the multer will create the random file names without extensions.
+        return cb(null, `${file.fieldname}_${Date.now()}_${(file.originalname)}`) 
     }
 });
 
@@ -53,13 +53,14 @@ const upload = multer({
       fileSize: 6000000    //file size limit is 6 MB
   },
   fileFilter: function (req, file, cb) {
-      var ext = path.extname(file.originalname); // ext takes the uploading file extensions
-      if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg' && ext !== '.gif'  && ext !== '.bmp') { //validates the file extensions when uploading the image
+      var ext = path.extname(file.originalname); 
+      if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg' && ext !== '.gif'  && ext !== '.bmp') { 
           return cb(new  multer.MulterError('Allowed file formats PNG, JPG/JPEG, GIF, BMP!!'));
       }
       cb(null, true)
   },
 });
+// Swagger Playground!
 
 /**
  * @swagger
@@ -91,7 +92,7 @@ const upload = multer({
  *              description: Internal server error        
  */
 
-// multer supports both single and multiple file uploads. upload.single is used to upload single file. In postman to test the file upload the keyword given in upload.single i.e img need to be used.
+
 app.post('/api/v1/detectFace', upload.single('imageFile'), (req, res) => {
     //let inputURL = req.query.imageURL
     let inputURL = req.body.imageURL
@@ -173,6 +174,7 @@ function multerErrorHandler(error, req, res, next) {
 }
 
 app.use(multerErrorHandler);
+
 
 
 app.get('/', (req, res) => {
