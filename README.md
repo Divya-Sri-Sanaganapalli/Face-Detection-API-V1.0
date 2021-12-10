@@ -46,7 +46,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
  http://67.205.172.73:3000/api/v1/detectFace
  
  ```
- - Input Image URL :  In Request Body > form-data, Set Key as 'imageURL' and value as '<input image url>' 
+ - Input Image URL :  In Request Body > form-data, Set Key as 'imageURL' and value as input image url  
  
  - Input Image File upload: In Request Body > form-data, Set Key as 'imageFile' and upload an image file in value 
  
