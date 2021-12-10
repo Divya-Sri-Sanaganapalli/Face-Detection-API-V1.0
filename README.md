@@ -4,9 +4,9 @@
 
 Face API can detect faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
 
-<h5> Face ID </h5> Unique identifier string for each detected face in an image. 
+**Face ID** -  Unique identifier string for each detected face in an image. 
 
-<h5> Face rectangles </h5>  Rectangle area for the face location on image.
+**Face rectangles** - Rectangle area for the face location on image.
 <img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceRectangle.png" alt = "face rectangle img" width="700" height = "300">
 
 <h5> Face Landmarks </h5>  Set of easy-to-find points on a face, such as the pupils or the tip of the nose. By default, there are 27 predefined landmark points. The following figure shows all 27 points:
