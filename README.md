@@ -37,23 +37,6 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   - The Allowed image file formats are JPEG, PNG, GIF (the first frame), and BMP format are supported.
   - The Image file Size is from 1KB to 6MB.
   - The minimum detectable face size is 36x36 pixels in an image no larger than 1920x1080 pixels. Images with dimensions higher than 1920x1080 pixels will need a proportionally larger minimum face size.
- 
- <h3> Request Headers <h3>
-  
-   ```
-   'Content-Type' : 'multipart/form-data'
- 
-   ```
- <h3> Request Body <h3>
-  
-  Input is sent in POST body. Input method supported image URL or image file. 
-  
-  Fields in request body:
-  
-  | Fields | Type | Description |
-  | --- | --- | --- |  
-  | imageURL | String | input image url to detect faces.|
-  | imageFile | File | upload the file to detect faces.|
   
  <h3> Try out this API with Postman! </h3>
  
@@ -86,8 +69,24 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   https://user-images.githubusercontent.com/86088469/145495282-b848bde4-728c-4054-bedb-665f9c2bf72a.mp4
 
 
-
-
+ <h3> Request Headers </h3>
+  
+   ```
+   'Content-Type' : 'multipart/form-data'
+ 
+   ```
+ <h3> HTTP Method </h3> POST
+ 
+ <h3> Request Body </h3>
+  
+  Input is sent in POST body. Input method supported in the form of image URL or image file. 
+  
+  Fields in request body:
+  
+  | Fields | Type | Description |
+  | --- | --- | --- |  
+  | imageURL | String | input image url to detect faces.|
+  | imageFile | File | upload a image file to detect faces.|
   
   <h3> Responses </h3> 
   
