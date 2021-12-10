@@ -3,7 +3,7 @@ var express = require('express');
 const app = express(); // express server
 const port = 3000;
 var multer = require('multer');  
-const path = require('path'); //requiring path to work with file and directory paths
+const path = require('path'); 
 require('dotenv').config(); 
 
 //swagger configuration
