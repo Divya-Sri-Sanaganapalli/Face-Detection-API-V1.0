@@ -7,10 +7,10 @@ Face API can detects human faces in an image, returns faceId's, face rectangles,
 **Face ID** -  Unique identifier string for each detected face in an image. 
 
 **Face rectangles** - Rectangle area for the face location on image.
-<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceRectangle.png" alt = "face rectangle img" width="700" height = "300">
+<img src="https://github.com/Divya-Sri-Sanaganapalli/project_videos/blob/main/FaceRectangle.png" alt = "face rectangle img" width="700" height = "300">
 
 **Face Landmarks** -  Set of easy-to-find points on a face, such as the pupils or the tip of the nose. By default, there are 27 predefined landmark points. The following figure shows all 27 points:
-<img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceLandmarks.png" alt="face attribute img" width="600" height="400">
+<img src="https://github.com/Divya-Sri-Sanaganapalli/project_videos/blob/main/FaceAttributes.png" alt="face attribute img" width="600" height="400">
 
 **Face attributes** - Extracts face related attributes, such as age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition.
 
