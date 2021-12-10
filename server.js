@@ -7,9 +7,8 @@ var multer = require('multer'); // multer is middleware for handling the uploadi
 //var upload = multer({ storage: storage }) 
 const path = require('path'); //requiring path to work with file and directory paths
 require('dotenv').config(); 
-//console.log(process.env);
 
-//swagger
+//swagger configuration
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 app.use(express.json());
@@ -38,7 +37,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(specs));
 //Azure Face API key and URI 
 let subscriptionKey = process.env.API_KEY;
 let face_api_uri = process.env.API_URL;
-
 
 // Multer Configuration
 var image_storage = multer.diskStorage({     
@@ -148,9 +146,7 @@ app.post('/api/v1/detectFace', upload.single('imageFile'), (req, res) => {
         });
     } })
     .catch(error =>{
-        //res.send(CircularJSON.stringify(temp));
         console.error(error.response);
-        //res.send(error.response.data);
         res.status(error.response.status).json(
             error.response.data
     )})
@@ -177,13 +173,9 @@ function multerErrorHandler(error, req, res, next) {
 
 app.use(multerErrorHandler);
 
-
-
 app.get('/', (req, res) => {
     res.send('Welcome');
 });
-
-
 
 app.listen(port, () => {
     console.log('listening to the port: ' + port);
