@@ -19,7 +19,7 @@ Face API can detect faces in an image, returns faceId's, face rectangles, landma
  - Consumed API : Azure Face API V1.0 - Detect, recognitionModel - "recognition_03"
  - Programming Language: Node JS, Express JS 
  - Protocol : HTTP 
- - File upload : [Multer](https://www.npmjs.com/package/multer), Function - diskStorage 
+ - File upload : [Multer](https://www.npmjs.com/package/multer)
  - API Playground : [Swagger](https://swagger.io/)
  
  <h2> How Face Detection API V1.0 works ? </h2>
@@ -381,3 +381,4 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
         }
   ```
  
+- Made with [Microsoft Azure Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)
