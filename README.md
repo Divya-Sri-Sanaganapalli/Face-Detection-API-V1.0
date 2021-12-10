@@ -54,7 +54,9 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
  <h3>Video Demonstration for using this API using Postman! </h3>
   
   
-  
+  https://user-images.githubusercontent.com/86088469/145498210-7174bdf2-9c5e-42f1-b1cc-02f1c1f5b944.mp4
+
+
  <h3> Try out with Swagger Playground! </h3>
  
  ```
