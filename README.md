@@ -4,15 +4,15 @@
 
 Face API can detect faces in an image, returns faceId's, face rectangles, landmarks, and attributes. The Face Detection API takes image in the form of image url or image file and returns JSON responses, and uses standard HTTP response codes. 
 
-<h5> Face ID </h5> - Unique identifier string for each detected face in an image. 
+<h5> Face ID </h5> Unique identifier string for each detected face in an image. 
 
-<h5> Face rectangles </h5> - Rectangle area for the face location on image.
+<h5> Face rectangles </h5>  Rectangle area for the face location on image.
 <img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceRectangle.png" alt = "face rectangle img" width="700" height = "300">
 
-<h5> Face Landmarks </h5> - Set of easy-to-find points on a face, such as the pupils or the tip of the nose. By default, there are 27 predefined landmark points. The following figure shows all 27 points:
+<h5> Face Landmarks </h5>  Set of easy-to-find points on a face, such as the pupils or the tip of the nose. By default, there are 27 predefined landmark points. The following figure shows all 27 points:
 <img src="https://github.com/Divya-Sri-Sanaganapalli/Azure-FACE-API/blob/main/FaceLandmarks.png" alt="face attribute img" width="600" height="400">
 
-<h5> Face attributes </h5>  - Extracts face related attributes, such as age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition.
+<h5> Face attributes </h5>  Extracts face related attributes, such as age, gender, smile, facialHair, glasses, emotion, hair, makeup, occlusion, accessories, blur, exposure, noise, qualityForRecognition.
 
 <h2> How is Face Detection API V1.0 built ?</h2>
 
@@ -43,7 +43,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
  Set request method to 'POST' and set the Request URL as
  
  ```
- https://67.205.172.73:3000/api/v1/detectFace
+ http://67.205.172.73:3000/api/v1/detectFace
  
  ```
  - Input Image URL :  In Request Body > form-data, Set Key as 'imageURL' and value as '<input image url>' 
