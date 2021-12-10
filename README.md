@@ -392,6 +392,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   ```
    {
      "error": {
+       "code": "serverError",
        "message": "Internal Server Error"
      }
    }
