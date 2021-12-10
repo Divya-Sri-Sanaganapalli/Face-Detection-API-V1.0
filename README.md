@@ -381,4 +381,4 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
         }
   ```
  
-- Made with [Microsoft Azure Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)
+**Made with [Microsoft Azure Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)**
