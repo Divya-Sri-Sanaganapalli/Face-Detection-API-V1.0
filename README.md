@@ -68,15 +68,15 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
 
   https://user-images.githubusercontent.com/86088469/145495282-b848bde4-728c-4054-bedb-665f9c2bf72a.mp4
 
-
+ <h3> HTTP Method </h3> POST
+ 
  <h3> Request Headers </h3>
   
    ```
    'Content-Type' : 'multipart/form-data'
  
    ```
- <h3> HTTP Method </h3> POST
- 
+   
  <h3> Request Body </h3>
   
   Input is sent in POST body. Input method supported in the form of image URL or image file. 
