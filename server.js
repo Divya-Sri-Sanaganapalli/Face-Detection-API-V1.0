@@ -92,7 +92,6 @@ const upload = multer({
 
 
 app.post('/api/v1/detectFace', upload.single('imageFile'), (req, res) => {
-    //let inputURL = req.query.imageURL
     let inputURL = req.body.imageURL
     let inputFile = req.file
     // Handling url or file requests
