@@ -162,6 +162,7 @@ function multerErrorHandler(error, req, res, next) {
     else {
         return res.status(500).json({
             error: {
+                code: error.code,
                 message: error.message
             }
         })
