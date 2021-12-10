@@ -2,9 +2,7 @@ const { default: axios } = require('axios');
 var express = require('express'); 
 const app = express(); // express server
 const port = 3000;
-var multer = require('multer'); // multer is middleware for handling the uploading files. Multer adds a body object and a file or files object to the request object.
-//var upload = multer({dest:'upload/img'}); 
-//var upload = multer({ storage: storage }) 
+var multer = require('multer');  
 const path = require('path'); //requiring path to work with file and directory paths
 require('dotenv').config(); 
 
