@@ -321,68 +321,68 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   - If API is requested with invalid or broken image URL then the following JSON error response will be displayed 
   
   ```
-      {
-        "error": {
-           "code": "InvalidURL",
-           "message": "Invalid image URL or error downloading from target server. Remote server error returned: \"The SSL connection could not be established, see              inner exception.\""
-       }
+   {
+     "error": {
+       "code": "InvalidURL",
+       "message": "Invalid image URL or error downloading from target server. Remote server error returned: \"The SSL connection could not be established, see              inner exception.\""
      }
+   }
 
  ```
   
   - If API is requested without specifying any uploading image file or image url the following JSON error response will be displayed
   
   ```
-           {
-            "error" : {
-                "code": "MissingInput",
-                "message": "You should either input image url or upload image file"
-         }
-       }
+   {
+     "error": {
+       "code": "MissingInput",
+       "message": "You should either input image url or upload image file"
+     }
+   }
   ```
   
   - If the input images doesn't have any human faces then the following JSON error response will be displayed
   
   ```
-           {
-            "error" : {
-                "code": "NoFaceDetected",
-                "message": "No face detected in the given input"
-          }
-        }
+   {
+     "error": {
+       "code": "NoFaceDetected",
+       "message": "No face detected in the given input"
+     }
+   }
   ```
   
   - If API is requested with image URL and file upload at same time, then following JSON error response will be displayed
 
   ```
-          {
-            "error" : {
-                "code": "InvalidInputs",
-                "message": "You are allowed to input either URL or file. Requesting both at the same time is not allowed"
-            }
-         }
+   {
+     "error": {
+       "code": "InvalidInputs",
+       "message": "You are allowed to input either URL or file. Requesting both at the same time is not allowed"
+     }
+   }
   ```
   
   - If API is requested with unsupported image file formats, then the following JSON error response will be displayed
 
   ```
-          {
-            "error": {
-                "code": "Allowed file formats PNG, JPG/JPEG, GIF, BMP!!",
-                "message": "Bad Request"
-          }
-        }
+   {
+     "error": {
+       "code": "Allowed file formats PNG, JPG/JPEG, GIF, BMP!!",
+       "message": "Bad Request"
+     }
+   }
   ```
   
   - If API is requested with the file size larger than 6 MB, then the following JSON error response will be displayed
 
   ```
-         {
-           "error": {
-               "code": "LIMIT_FILE_SIZE",
-               "message": "Bad Request"
-           }
-         }
+   {
+     "error": {
+       "code": "LIMIT_FILE_SIZE",
+       "message": "Bad Request"
+     }
+   }
        
    ```
   
@@ -390,11 +390,11 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
   
   If there is problem from Azure API service, then the following JSON error response will be displayed
   ```
-        {
-           "error": {
-               "message": "Internal Server Error"
-             }
-        }
+   {
+     "error": {
+       "message": "Internal Server Error"
+     }
+   }
   ```
  
 **Made with [Microsoft Azure Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)**
