@@ -324,7 +324,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
    {
      "error": {
        "code": "InvalidURL",
-       "message": "Invalid image URL or error downloading from target server. Remote server error returned: \"The SSL connection could not be established, see              inner exception.\""
+       "message": "Invalid image URL or error downloading from target server. Remote server error returned: \"The SSL connection could not be established, see     inner exception.\""
      }
    }
 
@@ -374,7 +374,7 @@ It can detect upto 100 faces for an image and Faces are ranked by face rectangle
    }
   ```
   
-  - If API is requested with the file size larger than 6 MB, then the following JSON error response will be displayed
+  - If API is requested with the file size less than 1 MB or larger than 6 MB, then the following JSON error response will be displayed
 
   ```
    {
